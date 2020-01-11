@@ -1,0 +1,28 @@
+{
+  "name": "examplepopulate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=developmet nodemon backend/index --exec babel-node",
+    "construir":"babel backend -d  dist --source-maps",
+    "start":"cross-env NODE_ENV=production node dist/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "cors": "^2.8.5",
+    "cross-env": "^6.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.5",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
